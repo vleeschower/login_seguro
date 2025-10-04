@@ -1,0 +1,144 @@
+body {
+  background-color: #01053b;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.auth-container {
+  background-color: rgba(20, 48, 94, 0.9);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  color: white;
+  min-width: 300px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(7, 214, 7, 0.2);
+  transition: all 0.3s ease;
+}
+
+.auth-container:hover {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  transform: translateY(-5px);
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 23px;
+}
+
+.auth-header h4 {
+  color: #07d607;
+  font-size: 28px;
+}
+
+.auth-header p {
+  color: #a0c1f9;
+  font-size: 16px;
+}
+
+label {
+  color: white;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.form-control {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  border-radius: 8px;
+  padding: 12px 15px;
+  transition: all 0.3s;
+}
+
+.form-control.full-width-input {
+  width: 89%;
+  margin-bottom: 12px;
+}
+
+.form-control:focus {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: #07d607;
+  box-shadow: 0 0 0 0.25rem rgba(7, 214, 7, 0.25);
+  color: white;
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.btn-success {
+  background-color: #07d607;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-weight: bold;
+  transition: all 0.3s;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.btn-success:hover {
+  background-color: #05b305;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-auth-link {
+  background: none;
+  border: none;
+  color: #07d607 !important;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+  font: inherit;
+}
+
+.btn-auth-link:hover {
+  color: #05b305 !important;
+}
+
+/* Dashboard styles */
+.dashboard-container {
+  width: 100%;
+  max-width: 600px;
+}
+
+.dashboard-card {
+  background-color: rgba(20, 48, 94, 0.9);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  color: white;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(7, 214, 7, 0.2);
+  text-align: center;
+}
+
+.dashboard-card h4 {
+  color: #07d607;
+  font-size: 28px;
+}
+
+.dashboard-actions {
+  margin: 25px 0;
+}
+
+.btn-outline-light {
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.auth-container, .dashboard-card {
+  animation: fadeIn 0.5s ease-out;
+}
+
